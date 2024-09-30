@@ -1,0 +1,43 @@
+.header {
+    background-color: #022c51;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+   
+
+}
+
+.icon {
+    background-color: rgb(236, 232, 232);
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #212121;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    vertical-align: center;
+    margin: 30px;
+}
+
+.productsearch {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    margin: 30px 60px;
+    background-color: #fefeff;
+    width: 500px;
+    border-radius: 30px;
+    border: 2px solid #212121;
+    padding: 0px 15px;
+    input {
+        width: 470px;
+        border: none;
+        border-radius: 30px;
+    }
+    input:focus {
+        outline: none;
+      }
+    
+}
