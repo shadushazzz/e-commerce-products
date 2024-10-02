@@ -11,8 +11,6 @@ function ProductFilters() {
 
 
     const { productsData, setProductsToShow ,category , productsToShow } = useContext(stateContext);
-
-
     const productSeachHandler = (val) => {
         if (val.length > 0) {
             const searchedProduct = productsToShow.filter(product => product.title.toLowerCase().includes(val.toLowerCase()));
