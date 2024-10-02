@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { stateContext } from '../pages/stateContext';
+import { stateContext } from '../../pages/stateContext';
 
 function ProductFilterSort() {
     const {  productsToShow, setProductsToShow } = useContext(stateContext);
