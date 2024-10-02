@@ -1,8 +1,8 @@
 import { React, useEffect, useState } from 'react'
-import Header from '../components/header';
-import Nav from '../components/nav';
-import ProductFilters from '../components/productfilters';
-import ProductListing from '../components/productlisting';
+import Header from '../components/genericComponents/header';
+import Nav from '../components/genericComponents/nav';
+import ProductFilters from '../components/productComponents/productfilters';
+import ProductListing from '../components/productComponents/productlisting';
 import { stateContext } from "./stateContext";
 
 const HomePage = () => {

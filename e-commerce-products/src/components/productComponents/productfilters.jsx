@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import './componentStyles.css';
+import '../styles/componentStyles.css';
 import ProductFilterSelect from './productfilterselect';
 import ProductSearchInput from './productsearchinput';
 import ProductFilterSort from './productfiltersort';
-import { stateContext } from '../pages/stateContext';
-import { Capitalize } from '../utlis/helpers';
+import { stateContext } from '../../pages/stateContext';
+import { Capitalize } from '../../utlis/helpers';
 
 
 function ProductFilters() {

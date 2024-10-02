@@ -1,5 +1,5 @@
 import React from 'react';
-import './componentStyles.css';
+import '../styles/componentStyles.css';
 
 function NavItems({iconUrl, productText , altText , iconWidth ,isActive}) {
   return (

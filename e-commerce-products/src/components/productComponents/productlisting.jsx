@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import ProductCard from './productcard';
-import {stateContext} from '../pages/stateContext.js'
+import {stateContext} from '../../pages/stateContext.js'
 
 function ProductListing() {
     const { productsToShow , isLoading } = useContext(stateContext);
