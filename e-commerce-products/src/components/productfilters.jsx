@@ -20,7 +20,7 @@ function ProductFilters() {
 
     const productSeachHandler = (val) => {
         if (val.length > 0) {
-            const searchedProduct = productsToShow.filter(product => product.title.includes(val));
+            const searchedProduct = productsToShow.filter(product => product.title.toLowerCase().includes(val.toLowerCase()));
             searchedProduct.length === 0 ? setProductsToShow([]) : setProductsToShow(searchedProduct)
         } else {
             setProductsToShow(productsData)  
