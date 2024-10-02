@@ -3,10 +3,13 @@ import ProductCard from './productcard';
 import {stateContext} from '../pages/stateContext.js'
 
 function ProductListing() {
-    const { productsToShow } = useContext(stateContext);
+    const { productsToShow , isLoading } = useContext(stateContext);
   return (
     <div className='productslistcontainer'> 
-        {productsToShow.length > 0 ? productsToShow.map(card => <ProductCard cardInfo = {card} /> ) : 'No products to show'}
+       {
+        isLoading ? 'Loading Products..' :  productsToShow.length > 0 ? productsToShow.map(card => <ProductCard cardInfo = {card} /> ) : 'No products to show'
+       }
+       
         
     </div>
 

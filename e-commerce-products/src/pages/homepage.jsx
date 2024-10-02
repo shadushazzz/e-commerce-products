@@ -10,20 +10,25 @@ const HomePage = () => {
   const [productsData, setProductsData] = useState([]);
   const [productsToShow, setProductsToShow] = useState(productsData);
   const [category, setCategory] = useState('All');
+  const [isLoading, setIsLoading] = useState(false);
 
 
-
-
-  useEffect(() => {
+  async function fetchProducts() {
     try {
-      fetch('https://fakestoreapi.com/products/')
+      setIsLoading(true);
+      await fetch('https://fakestoreapi.com/products/')
         .then(res => res.json())
         .then(json => {
           setProductsData(json);
           setProductsToShow(json)
         })
+        setIsLoading(false)
     } catch (err) {
     }
+  }
+
+  useEffect(() => {
+   fetchProducts();
   }, []);
 
 
@@ -35,7 +40,8 @@ const HomePage = () => {
         productsData, 
         setProductsData ,
         category , 
-        setCategory 
+        setCategory ,
+        isLoading
       }}>
         <div className='home'>
           <Header />
