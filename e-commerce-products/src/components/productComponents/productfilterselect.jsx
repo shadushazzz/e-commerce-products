@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import {stateContext} from '../pages/stateContext.js'
-import { Capitalize } from '../utlis/helpers.js';
+import {stateContext} from '../../pages/stateContext.js'
+import { Capitalize } from '../../utlis/helpers.js';
 
 
 

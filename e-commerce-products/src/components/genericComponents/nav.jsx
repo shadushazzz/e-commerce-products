@@ -1,7 +1,7 @@
 import React from 'react';
 import NavItems from './navitems';
-import productsIconUrl from '../assets/productsIcon.svg';
-import './componentStyles.css';
+import productsIconUrl from '../../assets/productsIcon.svg';
+import '../styles/componentStyles.css';
 
 function Nav() {
   return (

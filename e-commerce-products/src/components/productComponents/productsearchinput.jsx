@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../assets/searchicon.svg';
-import './componentStyles.css';
+import logo from '../../assets/searchicon.svg';
+import '../styles/componentStyles.css';
 
 function ProductSearchInput({placeholder , activeClass , onSearchChange}) {
 

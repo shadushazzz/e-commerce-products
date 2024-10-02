@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import Icon from './icon';
-import ProductSearchInput from './productsearchinput';
-import './componentStyles.css';
-import { stateContext } from '../pages/stateContext';
+import ProductSearchInput from '../productComponents/productsearchinput';
+import '../styles/componentStyles.css';
+import { stateContext } from '../../pages/stateContext';
 
 const Header = () => {
 

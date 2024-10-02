@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import star from '../assets/starrating.png';
+import star from '../../assets/starrating.png';
 
 function ProductCard({ cardInfo }) {
 

@@ -1,23 +1,16 @@
 import React, { useContext } from 'react';
-import './componentStyles.css';
+import '../styles/componentStyles.css';
 import ProductFilterSelect from './productfilterselect';
 import ProductSearchInput from './productsearchinput';
 import ProductFilterSort from './productfiltersort';
-import { stateContext } from '../pages/stateContext';
-import { Capitalize } from '../utlis/helpers';
+import { stateContext } from '../../pages/stateContext';
+import { Capitalize } from '../../utlis/helpers';
 
 
 function ProductFilters() {
 
 
     const { productsData, setProductsToShow ,category , productsToShow } = useContext(stateContext);
-    let flag=false;
-    let resetData;
-    if(flag) {
-        resetData = productsToShow;
-        flag = false;
-    }
-
     const productSeachHandler = (val) => {
         if (val.length > 0) {
             const searchedProduct = productsToShow.filter(product => product.title.toLowerCase().includes(val.toLowerCase()));
