@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Icon from './icon';
 import ProductSearchInput from './productsearchinput';
+import './componentStyles.css';
+import { stateContext } from '../pages/stateContext';
 
 const Header = () => {
-  return (
-    <div className='header'>
-        <Icon />
-        <ProductSearchInput placeholder={'Show products based on search'} onInputChange={(val) => {console.log(val)}}/>
-    </div>
-  )
+
+    const { productsData, setProductsToShow } = useContext(stateContext);
+    const productSeachHandler = (val) => {
+       if (val.length > 0) {
+            const searchedProduct = productsData.filter(product => product.title.includes(val));
+            searchedProduct.length === 0 ? setProductsToShow([]) : setProductsToShow(searchedProduct)
+        } else {
+            setProductsToShow(productsData)
+            
+        }
+    }
+
+    return (
+        <div className='header'>
+            <Icon />
+            <ProductSearchInput onSearchChange={(val) => productSeachHandler(val)} placeholder={'Show products based on search'} activeClass={'productsearch'} />
+        </div>
+    )
 }
 
 
