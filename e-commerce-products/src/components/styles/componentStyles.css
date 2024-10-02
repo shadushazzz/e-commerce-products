@@ -38,8 +38,8 @@
     padding: 0px 10px;
     input {
         width: 470px;
+        border-radius: 30px !important;
         border: none;
-        border-radius: 30px;
     }
     input:focus {
         outline: none;
@@ -59,8 +59,8 @@
     padding: 0px 10px;
     input {
         width: 270px;
+        border-radius: 30px !important;
         border: none;
-        border-radius: 30px;
     }
     input:focus {
         outline: none;
