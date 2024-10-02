@@ -11,12 +11,7 @@ function ProductFilters() {
 
 
     const { productsData, setProductsToShow ,category , productsToShow } = useContext(stateContext);
-    let flag=false;
-    let resetData;
-    if(flag) {
-        resetData = productsToShow;
-        flag = false;
-    }
+
 
     const productSeachHandler = (val) => {
         if (val.length > 0) {
